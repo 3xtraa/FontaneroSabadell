@@ -3,229 +3,246 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fontanero Sabadell Expertos | Presupuesto transparente, sin sorpresas</title>
-<meta name="description" content="Fontaneros expertos en Sabadell. Presupuesto desglosado por teléfono, sin cargos ocultos. Fugas, atascos, calentadores. Llama al 936 942 508 o escríbenos por WhatsApp.">
+<title>Fontanero Sabadell 24 horas | También a las tres de la mañana</title>
+<meta name="description" content="Fontanero de urgencias en Sabadell, las 24 horas de los 365 días. Fugas, inundaciones, atascos y calderas. Llama al 936 941 829 o escríbenos por WhatsApp.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Public+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@600;700;800;900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --indigo:#22314F;
-    --indigo-2:#2B3E63;
-    --indigo-deep:#171F33;
-    --cream:#F6F1E7;
-    --white:#FFFDF8;
-    --terracotta:#D2603A;
-    --terracotta-deep:#B44B29;
-    --text:#5B6270;
-    --line:rgba(34,49,79,0.14);
-    --ok:#3C8F5C;
+    --deep:#08182A;
+    --mid:#0F2C43;
+    --slate:#1B3E58;
+    --chrome:#DEEAF1;
+    --chrome-soft:#A9C2D2;
+    --water:#43C7E0;
+    --water-deep:#1E9DB8;
+    --signal:#FF7A45;
+    --signal-deep:#E85F2A;
+    --paper:#F4F8FA;
+    --ink:#0B1F30;
+    --body:#4E6072;
+    --hair:rgba(11,31,48,0.12);
+    --hair-dark:rgba(222,234,241,0.14);
   }
   *{box-sizing:border-box; margin:0; padding:0;}
   html{scroll-behavior:smooth;}
   body{
-    background:var(--white);
-    color:var(--text);
-    font-family:'Public Sans', sans-serif;
-    line-height:1.6;
+    background:var(--paper);
+    color:var(--body);
+    font-family:'Instrument Sans', sans-serif;
+    font-size:16px;
+    line-height:1.62;
     -webkit-font-smoothing:antialiased;
-    padding-bottom:76px;
+    padding-bottom:74px;
   }
   h1,h2,h3{
-    font-family:'Newsreader', serif;
-    color:var(--indigo);
-    line-height:1.1;
-    letter-spacing:-0.01em;
-    font-weight:600;
+    font-family:'Gabarito', sans-serif;
+    color:var(--ink);
+    line-height:1.04;
+    letter-spacing:-0.025em;
+    font-weight:800;
   }
-  .mono{font-family:'IBM Plex Mono', monospace;}
   a{color:inherit;}
-  .wrap{max-width:1140px; margin:0 auto; padding:0 24px;}
-  img{max-width:100%; display:block;}
-  :focus-visible{outline:2.5px solid var(--terracotta); outline-offset:3px;}
+  .wrap{max-width:1120px; margin:0 auto; padding:0 24px;}
+  :focus-visible{outline:3px solid var(--water); outline-offset:3px; border-radius:4px;}
 
-  /* ---------- TOP BAR ---------- */
-  .topbar{ background:var(--indigo-deep); color:#C7CEDC; font-size:13.5px;}
-  .topbar .wrap{ display:flex; align-items:center; justify-content:space-between; padding:13px 24px; gap:12px; flex-wrap:wrap;}
-  .topbar .brand{ font-family:'Newsreader', serif; font-weight:600; font-size:18px; color:#fff;}
-  .topbar .brand span{ color:var(--terracotta);}
-  .topbar .actions{display:flex; gap:10px; align-items:center;}
-  .topbar .phone{
-    display:flex; align-items:center; gap:8px; text-decoration:none; color:#fff;
-    background:var(--terracotta); font-weight:700; padding:9px 16px; border-radius:8px; white-space:nowrap; font-family:'Public Sans', sans-serif;
+  /* ============ TOP BAR ============ */
+  .topbar{ background:var(--deep); color:var(--chrome-soft); font-size:14px;}
+  .topbar .wrap{ display:flex; align-items:center; justify-content:space-between; padding:12px 24px; gap:14px; flex-wrap:wrap;}
+  .wordmark{ font-family:'Gabarito', sans-serif; font-weight:800; font-size:17px; color:#fff; letter-spacing:-0.02em; display:flex; align-items:center; gap:10px;}
+  .wordmark .drop{ width:22px; height:22px; flex:none;}
+  .topbar .links{display:flex; gap:9px; align-items:center;}
+  .pill-call, .pill-wa{
+    display:inline-flex; align-items:center; gap:8px; text-decoration:none;
+    font-weight:600; padding:9px 16px; border-radius:10px; white-space:nowrap; font-size:14px;
   }
-  .topbar .phone svg{width:15px; height:15px;}
-  .topbar .wa{
-    display:flex; align-items:center; gap:7px; text-decoration:none; color:#fff;
-    background:#25D366; font-weight:700; padding:9px 14px; border-radius:8px; white-space:nowrap; font-size:13px;
-  }
-  .topbar .wa svg{width:14px; height:14px;}
+  .pill-call{ background:var(--signal); color:#fff;}
+  .pill-wa{ background:rgba(222,234,241,0.1); color:#fff; border:1px solid var(--hair-dark);}
+  .pill-call svg, .pill-wa svg{width:15px; height:15px; flex:none;}
 
-  /* ---------- HERO ---------- */
+  /* ============ HERO ============ */
   .hero{
-    padding:58px 0 46px; position:relative; overflow:hidden;
     background:
-      radial-gradient(650px 380px at 90% -10%, rgba(210,96,58,0.09), transparent 60%),
-      var(--cream);
+      radial-gradient(900px 520px at 78% 8%, rgba(67,199,224,0.16), transparent 62%),
+      linear-gradient(178deg, var(--deep), var(--mid));
+    color:var(--chrome);
+    padding:70px 0 76px;
+    position:relative; overflow:hidden;
   }
-  .hero .wrap{ display:grid; grid-template-columns:1.05fr 0.95fr; gap:54px; align-items:center;}
-  .eyebrow{
-    display:inline-flex; align-items:center; gap:9px;
-    font-size:12.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.07em;
-    color:var(--terracotta-deep); background:rgba(210,96,58,0.1);
-    padding:8px 14px; border-radius:99px; margin-bottom:22px;
-  }
-  .eyebrow svg{width:14px; height:14px;}
-  .hero h1{ font-size:clamp(32px, 4.4vw, 52px); max-width:12.5ch;}
-  .hero h1 .hi{ font-style:italic; color:var(--terracotta-deep); }
-  .hero p.lead{ margin-top:20px; font-size:17.5px; color:var(--text); max-width:44ch; font-family:'Public Sans', sans-serif;}
-  .hero-ctas{ margin-top:30px;}
-  .cta-col{display:flex; flex-direction:column; gap:12px; align-items:flex-start;}
-  .btn-call{
-    display:inline-flex; align-items:center; gap:12px;
-    background:var(--indigo); color:#fff;
-    font-weight:700; font-size:17.5px; padding:16px 25px; border-radius:12px;
-    text-decoration:none; box-shadow:0 14px 26px -10px rgba(34,49,79,0.4);
-    transition:transform .15s ease;
-  }
-  .btn-call:hover{ transform:translateY(-2px); }
-  .btn-call svg{width:20px; height:20px; flex:none; color:var(--terracotta);}
-  .btn-call .sub{ display:block; font-weight:500; font-size:11.5px; opacity:0.8;}
-  .btn-whatsapp{
+  .hero .wrap{ display:grid; grid-template-columns:1.02fr 0.98fr; gap:60px; align-items:center;}
+  .status{
     display:inline-flex; align-items:center; gap:10px;
-    background:#25D366; color:#fff;
-    font-weight:700; font-size:15px; padding:12px 20px; border-radius:12px;
-    text-decoration:none; box-shadow:0 10px 20px -8px rgba(37,211,102,0.4);
-    transition:transform .15s ease;
+    font-size:14.5px; font-weight:600; color:var(--water);
+    background:rgba(67,199,224,0.1); border:1px solid rgba(67,199,224,0.28);
+    padding:9px 16px; border-radius:99px; margin-bottom:26px;
   }
-  .btn-whatsapp:hover{ transform:translateY(-2px); }
-  .btn-whatsapp svg{width:18px; height:18px; flex:none;}
-  .trust-mini{ font-size:13px; color:var(--text); display:flex; align-items:center; gap:8px; margin-top:6px;}
-  .trust-mini svg{width:16px; height:16px; color:var(--ok); flex:none;}
-
-  /* ---------- SIGNATURE: TRANSPARENT QUOTE RECEIPT ---------- */
-  .receipt{
-    background:var(--white); border-radius:18px;
-    box-shadow:0 26px 50px -22px rgba(34,49,79,0.28);
-    position:relative;
+  .status .pulse{ width:8px; height:8px; border-radius:50%; background:var(--water); box-shadow:0 0 0 0 rgba(67,199,224,0.6); animation:pulse 2.4s infinite;}
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(67,199,224,0.55);}
+    70%{box-shadow:0 0 0 9px rgba(67,199,224,0);}
+    100%{box-shadow:0 0 0 0 rgba(67,199,224,0);}
   }
-  .receipt-top{ padding:24px 26px 16px; display:flex; justify-content:space-between; align-items:center;}
-  .receipt-top .label{font-size:12px; text-transform:uppercase; letter-spacing:0.06em; color:#9199a8; font-weight:700;}
-  .receipt-top .id{font-family:'IBM Plex Mono', monospace; font-size:11px; color:#9199a8;}
-  .receipt-line{ padding:0 26px;}
-  .r-row{ display:flex; justify-content:space-between; align-items:center; padding:11px 0; border-bottom:1px dashed var(--line); font-size:14.5px;}
-  .r-row .k{color:var(--indigo); font-weight:600;}
-  .r-row .v{font-family:'IBM Plex Mono', monospace; color:var(--text); font-weight:500;}
-  .r-row.included .v{ color:var(--ok); font-weight:700;}
-  .r-total{
-    display:flex; justify-content:space-between; align-items:center;
-    padding:18px 26px; margin-top:4px; background:var(--indigo); color:#fff; border-radius:0 0 18px 18px;
+  .hero h1{ color:#fff; font-size:clamp(38px, 5.1vw, 62px); font-weight:900; max-width:13ch;}
+  .hero .lead{ margin-top:24px; font-size:18.5px; color:var(--chrome-soft); max-width:47ch;}
+  .hero .actions{ margin-top:36px; display:flex; flex-direction:column; gap:14px; align-items:flex-start;}
+  .btn-call{
+    display:inline-flex; align-items:center; gap:16px;
+    background:var(--signal); color:#fff; text-decoration:none;
+    padding:18px 28px 18px 20px; border-radius:16px;
+    box-shadow:0 18px 34px -14px rgba(255,122,69,0.6);
+    transition:transform .16s ease, box-shadow .16s ease;
   }
-  .r-total .k{font-family:'Newsreader', serif; font-size:19px; font-style:italic;}
-  .r-total .v{font-family:'IBM Plex Mono', monospace; font-size:22px; color:var(--terracotta); font-weight:700;}
-  .receipt-stamp{
-    position:absolute; top:18px; right:20px;
-    border:2px solid var(--terracotta); color:var(--terracotta-deep);
-    font-family:'Newsreader', serif; font-style:italic; font-weight:600; font-size:13px;
-    padding:5px 12px; border-radius:8px; transform:rotate(6deg);
+  .btn-call:hover{ transform:translateY(-2px); box-shadow:0 22px 40px -14px rgba(255,122,69,0.68);}
+  .btn-call .ring{ width:44px; height:44px; border-radius:12px; background:rgba(255,255,255,0.2); display:flex; align-items:center; justify-content:center; flex:none;}
+  .btn-call .ring svg{width:21px; height:21px;}
+  .btn-call .num{ font-family:'Gabarito', sans-serif; font-weight:800; font-size:21px; letter-spacing:-0.01em; display:block; line-height:1.15;}
+  .btn-call .cap{ font-size:13px; opacity:0.9; font-weight:500;}
+  .btn-wa{
+    display:inline-flex; align-items:center; gap:11px;
+    background:transparent; color:#fff; border:1.5px solid var(--hair-dark);
+    padding:13px 22px; border-radius:14px; text-decoration:none; font-weight:600; font-size:15.5px;
+    transition:border-color .16s ease, background .16s ease;
   }
+  .btn-wa:hover{ background:rgba(222,234,241,0.07); border-color:rgba(67,199,224,0.5);}
+  .btn-wa .wa-ic{width:26px; height:26px; border-radius:50%; background:#25D366; display:flex; align-items:center; justify-content:center; flex:none;}
+  .btn-wa .wa-ic svg{width:14px; height:14px; color:#fff;}
 
-  /* ---------- TRUSTBAR ---------- */
-  .trustbar{ background:var(--indigo); color:#fff; padding:22px 0;}
-  .trustbar .wrap{ display:flex; flex-wrap:wrap; gap:26px; justify-content:space-between; align-items:center;}
-  .trustbar .stat b{font-family:'Newsreader', serif; font-size:25px; color:var(--terracotta); display:block; font-weight:600;}
-  .trustbar .stat span{font-size:12px; color:#B7C0D6;}
-
-  /* ---------- SECTIONS ---------- */
-  section{padding:68px 0;}
-  .section-head{max-width:640px; margin-bottom:40px;}
-  .section-head .eyebrow{margin-bottom:14px;}
-  .section-head h2{font-size:clamp(25px,3vw,36px);}
-  .section-head p{color:var(--text); margin-top:14px; font-size:16px;}
-
-  .grid-3{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
-  .card{ background:var(--cream); border:1px solid var(--line); border-radius:16px; padding:26px 24px;}
-  .card .icon{ width:44px; height:44px; border-radius:11px; background:rgba(210,96,58,0.12);
-    display:flex; align-items:center; justify-content:center; margin-bottom:16px;}
-  .card .icon svg{width:22px; height:22px; color:var(--terracotta-deep);}
-  .card h3{font-family:'Newsreader', serif; font-weight:600; font-size:19px; color:var(--indigo); margin-bottom:8px;}
-  .card p{font-size:14.5px; color:var(--text);}
-
-  /* services with price */
-  .svc-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:16px;}
-  .svc-card{
-    background:var(--cream); border:1px solid var(--line); border-radius:14px; padding:20px 22px;
-    display:flex; justify-content:space-between; align-items:center; gap:14px;
+  /* ---- SIGNATURE: 24 HOUR DIAL ---- */
+  .dial-wrap{ display:flex; justify-content:center; align-items:center;}
+  .dial{ position:relative; width:100%; max-width:396px;}
+  .dial svg{ width:100%; height:auto; display:block; overflow:visible;}
+  .dial .track{ fill:none; stroke:rgba(222,234,241,0.14); stroke-width:12;}
+  .dial .arc{
+    fill:none; stroke:url(#waterGrad); stroke-width:12; stroke-linecap:round;
+    stroke-dasharray:1030; stroke-dashoffset:1030;
+    animation:draw 2.1s cubic-bezier(.22,.9,.28,1) .25s forwards;
   }
-  .svc-card .name{font-weight:700; color:var(--indigo); font-size:15px;}
-  .svc-card .desc{font-size:13px; color:var(--text); margin-top:3px;}
-  .svc-card .amt{font-family:'IBM Plex Mono', monospace; font-weight:700; font-size:16px; color:var(--terracotta-deep); white-space:nowrap;}
-
-  /* process */
-  .steps{display:grid; grid-template-columns:repeat(4,1fr); gap:20px;}
-  .step .num{
-    width:42px; height:42px; border-radius:50%; background:var(--indigo); color:var(--terracotta);
-    display:flex; align-items:center; justify-content:center; font-family:'Newsreader', serif; font-weight:600; font-style:italic; font-size:18px;
-    margin-bottom:14px;
+  @keyframes draw{ to{ stroke-dashoffset:0; } }
+  .dial .tick{ stroke:rgba(222,234,241,0.32); stroke-width:2;}
+  .dial .tick.major{ stroke:rgba(222,234,241,0.6); stroke-width:2.5;}
+  .dial .hr-label{ fill:var(--chrome-soft); font-family:'Instrument Sans', sans-serif; font-size:13px; font-weight:600;}
+  .dial-center{
+    position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center;
   }
-  .step h3{font-family:'Newsreader', serif; font-weight:600; font-size:18px; color:var(--indigo); margin-bottom:6px;}
-  .step p{font-size:14px; color:var(--text);}
-
-  /* mid CTA */
-  .cta-strip{
-    background:linear-gradient(135deg, var(--indigo-deep), var(--indigo));
-    color:#fff; border-radius:20px; padding:40px 36px;
-    display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap;
+  .dial-center .big{ font-family:'Gabarito', sans-serif; font-weight:900; font-size:66px; color:#fff; line-height:0.9; letter-spacing:-0.04em;}
+  .dial-center .small{ font-size:14.5px; color:var(--chrome-soft); margin-top:10px; max-width:17ch;}
+  .dial-note{
+    margin-top:26px; text-align:center; font-size:14px; color:var(--chrome-soft);
+    display:flex; align-items:center; justify-content:center; gap:9px;
   }
-  .cta-strip h3{color:#fff; font-size:26px; max-width:22ch; font-style:italic;}
-  .cta-strip p{color:#B7C0D6; margin-top:8px; font-size:15px; font-family:'Public Sans', sans-serif;}
+  .dial-note .sw{ width:13px; height:13px; border-radius:4px; background:var(--water); flex:none;}
 
-  /* zones */
-  .zones{display:flex; flex-wrap:wrap; gap:10px;}
-  .zone-chip{
-    font-size:13px; color:var(--indigo); background:var(--cream); border:1px solid var(--line);
-    padding:8px 14px; border-radius:99px; font-weight:600;
+  /* ============ COVER STRIP ============ */
+  .cover{ background:var(--slate); color:var(--chrome); padding:0;}
+  .cover .wrap{ display:grid; grid-template-columns:repeat(4,1fr);}
+  .cover .item{ padding:28px 26px; border-right:1px solid var(--hair-dark);}
+  .cover .item:last-child{border-right:none;}
+  .cover .item svg{ width:24px; height:24px; color:var(--water); margin-bottom:12px;}
+  .cover .item h3{ font-size:17px; color:#fff; font-weight:700; margin-bottom:5px; letter-spacing:-0.015em;}
+  .cover .item p{ font-size:14px; color:var(--chrome-soft); line-height:1.5;}
+
+  /* ============ SECTIONS ============ */
+  .section{ padding:82px 0;}
+  .section-intro{ max-width:600px; margin-bottom:48px;}
+  .section-intro h2{ font-size:clamp(29px,3.6vw,42px);}
+  .section-intro p{ margin-top:18px; font-size:17px; color:var(--body); max-width:56ch;}
+
+  /* ---- NIGHT TIMELINE ---- */
+  .timeline{ position:relative; border-left:2px solid var(--hair); margin-left:12px;}
+  .tl-item{ position:relative; padding:0 0 40px 34px;}
+  .tl-item:last-child{padding-bottom:0;}
+  .tl-item::before{
+    content:""; position:absolute; left:-9px; top:6px; width:16px; height:16px; border-radius:50%;
+    background:var(--paper); border:3px solid var(--water-deep);
   }
+  .tl-item.final::before{ background:var(--water-deep); border-color:var(--water-deep);}
+  .tl-clock{ font-family:'Gabarito', sans-serif; font-weight:800; font-size:20px; color:var(--water-deep); letter-spacing:-0.02em;}
+  .tl-item h3{ font-size:20px; margin:4px 0 7px;}
+  .tl-item p{ font-size:15.5px; max-width:54ch;}
 
-  /* faq */
-  .faq-item{border-bottom:1px solid var(--line);}
-  .faq-item summary{
-    list-style:none; cursor:pointer; display:flex; justify-content:space-between; align-items:center;
-    padding:20px 0; font-weight:600; font-size:18px; color:var(--indigo); font-family:'Newsreader', serif;
+  /* ---- PRICES ---- */
+  .rate-panel{
+    background:#fff; border:1px solid var(--hair); border-radius:20px; overflow:hidden;
+    box-shadow:0 24px 46px -30px rgba(11,31,48,0.35);
   }
-  .faq-item summary::-webkit-details-marker{display:none;}
-  .faq-item summary::after{content:"+"; font-size:22px; color:var(--terracotta-deep); font-weight:400; transition:transform .2s ease; font-family:'Public Sans', sans-serif;}
-  .faq-item[open] summary::after{transform:rotate(45deg);}
-  .faq-item p{padding-bottom:20px; color:var(--text); font-size:15px; max-width:70ch;}
+  .rate-row{ display:flex; justify-content:space-between; align-items:center; gap:18px; padding:22px 28px; border-bottom:1px solid var(--hair);}
+  .rate-row:last-of-type{border-bottom:none;}
+  .rate-row .job{ font-weight:700; color:var(--ink); font-size:16px;}
+  .rate-row .det{ font-size:14px; color:var(--body); margin-top:3px;}
+  .rate-row .fee{ font-family:'Gabarito', sans-serif; font-weight:800; font-size:20px; color:var(--ink); white-space:nowrap; letter-spacing:-0.02em;}
+  .rate-foot{ background:var(--deep); color:var(--chrome-soft); padding:20px 28px; font-size:14.5px; display:flex; gap:12px; align-items:flex-start;}
+  .rate-foot svg{width:19px; height:19px; color:var(--water); flex:none; margin-top:2px;}
+  .rate-foot b{color:#fff;}
 
-  /* footer */
-  footer{background:var(--indigo-deep); color:#B7C0D6; padding:44px 0 28px;}
-  footer .wrap{display:flex; justify-content:space-between; flex-wrap:wrap; gap:24px; align-items:flex-start;}
-  footer .brand{font-family:'Newsreader', serif; font-weight:600; color:#fff; font-size:21px; margin-bottom:8px;}
-  footer .brand span{color:var(--terracotta);}
-  footer .col p, footer .col a{font-size:14px; color:#B7C0D6; text-decoration:none;}
-  footer .col a:hover{color:#fff;}
-  footer .col p.title{color:#fff; font-weight:700; margin-bottom:8px; font-family:'Public Sans', sans-serif;}
-  footer .bottom{ margin-top:32px; padding-top:20px; border-top:1px solid rgba(255,255,255,0.12); font-size:12.5px; color:#6b7590; text-align:center;}
+  /* ---- CALL BAND ---- */
+  .band{
+    background:linear-gradient(135deg, var(--deep), var(--slate));
+    border-radius:24px; padding:52px 46px; color:var(--chrome);
+    display:flex; align-items:center; justify-content:space-between; gap:34px; flex-wrap:wrap;
+    position:relative; overflow:hidden;
+  }
+  .band::after{
+    content:""; position:absolute; width:340px; height:340px; border-radius:50%; right:-70px; top:-140px;
+    background:radial-gradient(circle, rgba(67,199,224,0.24), transparent 68%);
+  }
+  .band > *{position:relative;}
+  .band h2{ color:#fff; font-size:32px; max-width:16ch;}
+  .band p{ margin-top:12px; color:var(--chrome-soft); font-size:16px; max-width:38ch;}
+  .band .actions{display:flex; flex-direction:column; gap:13px; align-items:flex-start;}
 
-  /* sticky mobile bar */
-  .sticky-bar{ position:fixed; bottom:0; left:0; right:0; z-index:50; display:flex; box-shadow:0 -8px 20px -8px rgba(0,0,0,0.25);}
-  .sticky-bar a{ flex:1; display:flex; align-items:center; justify-content:center; gap:8px; padding:15px 10px; text-decoration:none; font-weight:700; font-size:15px;}
-  .sticky-bar .call-part{ background:var(--terracotta); color:#fff; }
-  .sticky-bar .wa-part{ background:#25D366; color:#fff; }
-  .sticky-bar svg{width:18px; height:18px; flex:none;}
+  /* ---- ZONES ---- */
+  .zone-list{ display:flex; flex-wrap:wrap; gap:11px;}
+  .zone{ font-size:14.5px; font-weight:600; color:var(--ink); background:#fff; border:1px solid var(--hair); padding:10px 17px; border-radius:11px;}
 
-  @media(max-width:900px){
-    .hero .wrap{grid-template-columns:1fr;}
-    .grid-3{grid-template-columns:1fr;}
-    .svc-grid{grid-template-columns:1fr;}
-    .steps{grid-template-columns:1fr 1fr;}
-    .trustbar .wrap{justify-content:space-around;}
-    .cta-strip{flex-direction:column; align-items:flex-start;}
+  /* ---- FAQ ---- */
+  .qa{ border-top:1px solid var(--hair);}
+  .qa:last-of-type{ border-bottom:1px solid var(--hair);}
+  .qa summary{
+    list-style:none; cursor:pointer; display:flex; justify-content:space-between; align-items:center; gap:20px;
+    padding:24px 0; font-family:'Gabarito', sans-serif; font-weight:700; font-size:19px; color:var(--ink); letter-spacing:-0.015em;
+  }
+  .qa summary::-webkit-details-marker{display:none;}
+  .qa .chev{ width:26px; height:26px; flex:none; border-radius:50%; border:1.5px solid var(--hair); display:flex; align-items:center; justify-content:center; transition:transform .22s ease, border-color .22s ease;}
+  .qa .chev svg{width:13px; height:13px; color:var(--water-deep);}
+  .qa[open] .chev{ transform:rotate(180deg); border-color:var(--water-deep);}
+  .qa p{ padding:0 0 26px; font-size:15.5px; max-width:62ch;}
+
+  /* ---- FOOTER ---- */
+  footer{ background:var(--deep); color:var(--chrome-soft); padding:56px 0 30px;}
+  footer .wrap{ display:flex; justify-content:space-between; gap:34px; flex-wrap:wrap;}
+  footer .wordmark{margin-bottom:12px;}
+  footer p, footer a{ font-size:15px; color:var(--chrome-soft); text-decoration:none;}
+  footer a:hover{color:#fff;}
+  footer .col h4{ color:#fff; font-family:'Gabarito', sans-serif; font-size:16px; margin-bottom:12px; font-weight:700;}
+  footer .fine{ margin-top:44px; padding-top:22px; border-top:1px solid var(--hair-dark); font-size:13px; color:#5d7c94;}
+
+  /* ---- STICKY ---- */
+  .sticky{ position:fixed; left:0; right:0; bottom:0; z-index:60; display:flex; box-shadow:0 -10px 26px -12px rgba(0,0,0,0.45);}
+  .sticky a{ flex:1; display:flex; align-items:center; justify-content:center; gap:9px; padding:16px 8px; text-decoration:none; font-weight:700; font-size:15.5px;}
+  .sticky .s-call{ background:var(--signal); color:#fff;}
+  .sticky .s-wa{ background:#25D366; color:#fff;}
+  .sticky svg{width:18px; height:18px; flex:none;}
+
+  @media(max-width:940px){
+    .hero .wrap{ grid-template-columns:1fr; gap:48px;}
+    .cover .wrap{ grid-template-columns:1fr 1fr;}
+    .cover .item{ border-bottom:1px solid var(--hair-dark);}
+    .cover .item:nth-child(2n){border-right:none;}
+    .band{ flex-direction:column; align-items:flex-start; padding:42px 32px;}
     footer .wrap{flex-direction:column;}
   }
-  @media(max-width:520px){ .steps{grid-template-columns:1fr;} }
-  @media(prefers-reduced-motion: reduce){ *{transition:none !important;} }
+  @media(max-width:560px){
+    .cover .wrap{grid-template-columns:1fr;}
+    .cover .item{border-right:none;}
+    .rate-row{flex-direction:column; align-items:flex-start; gap:8px;}
+    .dial-center .big{font-size:54px;}
+    .section{padding:62px 0;}
+  }
+  @media(prefers-reduced-motion: reduce){
+    *{animation:none !important; transition:none !important;}
+    .dial .arc{ stroke-dashoffset:0;}
+  }
 </style>
 </head>
 <body>
@@ -233,15 +250,18 @@
 <!-- TOP BAR -->
 <div class="topbar">
   <div class="wrap">
-    <div class="brand">Fontanero <span>Sabadell</span></div>
-    <div class="actions">
-      <a class="wa" href="https://wa.me/34644415819" target="_blank" rel="noopener">
+    <div class="wordmark">
+      <svg class="drop" viewBox="0 0 24 24" fill="none" stroke="#43C7E0" stroke-width="2.2"><path d="M12 2.5c3.8 4.8 6.6 8.6 6.6 12.3a6.6 6.6 0 0 1-13.2 0C5.4 11.1 8.2 7.3 12 2.5z"/></svg>
+      Fontanero Sabadell 24 h
+    </div>
+    <div class="links">
+      <a class="pill-wa" href="https://wa.me/34644415819" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.94 8.94 0 0 0-7.75 13.4L3 21l3.7-1.24A8.9 8.9 0 0 0 12.05 21a8.94 8.94 0 0 0 5.55-15.68zM12.05 19.3a7.3 7.3 0 0 1-3.83-1.07l-.28-.17-2.6.87.85-2.56-.18-.28a7.4 7.4 0 1 1 6.04 3.21zm4.05-5.5c-.22-.11-1.3-.64-1.5-.71s-.35-.11-.5.11-.57.71-.7.86-.26.17-.48.06a6.06 6.06 0 0 1-1.78-1.1 6.7 6.7 0 0 1-1.23-1.53c-.13-.22 0-.34.1-.45s.22-.26.33-.39a1.5 1.5 0 0 0 .22-.37.4.4 0 0 0 0-.39c-.06-.11-.5-1.2-.68-1.64s-.36-.37-.5-.38h-.43a.82.82 0 0 0-.6.28 2.5 2.5 0 0 0-.78 1.86 4.36 4.36 0 0 0 .91 2.3 9.9 9.9 0 0 0 3.8 3.36c.53.23.94.36 1.26.46a3 3 0 0 0 1.4.09 2.3 2.3 0 0 0 1.5-1.06 1.9 1.9 0 0 0 .13-1.06c-.06-.1-.2-.16-.42-.27z"/></svg>
         WhatsApp
       </a>
-      <a class="phone" href="tel:+34936942508">
+      <a class="pill-call" href="tel:+34936941829">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        936 942 508
+        936 941 829
       </a>
     </div>
   </div>
@@ -251,145 +271,183 @@
 <header class="hero">
   <div class="wrap">
     <div>
-      <span class="eyebrow">Presupuesto desglosado, sin cargos ocultos</span>
-      <h1>Fontanero experto en Sabadell, <span class="hi">precio claro desde el primer minuto</span></h1>
-      <p class="lead">Te desglosamos mano de obra, materiales y desplazamiento antes de venir. Lo que se acuerda por teléfono es lo que se paga al final.</p>
-      <div class="hero-ctas">
-        <div class="cta-col">
-          <a class="btn-call" href="tel:+34936942508">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <span>Llamar ahora: 936 942 508<span class="sub">Presupuesto gratis, sin compromiso</span></span>
-          </a>
-          <a class="btn-whatsapp" href="https://wa.me/34644415819" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.94 8.94 0 0 0-7.75 13.4L3 21l3.7-1.24A8.9 8.9 0 0 0 12.05 21a8.94 8.94 0 0 0 5.55-15.68zM12.05 19.3a7.3 7.3 0 0 1-3.83-1.07l-.28-.17-2.6.87.85-2.56-.18-.28a7.4 7.4 0 1 1 6.04 3.21zm4.05-5.5c-.22-.11-1.3-.64-1.5-.71s-.35-.11-.5.11-.57.71-.7.86-.26.17-.48.06a6.06 6.06 0 0 1-1.78-1.1 6.7 6.7 0 0 1-1.23-1.53c-.13-.22 0-.34.1-.45s.22-.26.33-.39a1.5 1.5 0 0 0 .22-.37.4.4 0 0 0 0-.39c-.06-.11-.5-1.2-.68-1.64s-.36-.37-.5-.38h-.43a.82.82 0 0 0-.6.28 2.5 2.5 0 0 0-.78 1.86 4.36 4.36 0 0 0 .91 2.3 9.9 9.9 0 0 0 3.8 3.36c.53.23.94.36 1.26.46a3 3 0 0 0 1.4.09 2.3 2.3 0 0 0 1.5-1.06 1.9 1.9 0 0 0 .13-1.06c-.06-.1-.2-.16-.42-.27z"/></svg>
-            Escríbenos por WhatsApp
-          </a>
-          <div class="trust-mini">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-            Garantía por escrito en cada trabajo
-          </div>
-        </div>
+      <span class="status"><span class="pulse"></span>Hay un fontanero de guardia ahora mismo</span>
+      <h1>El agua no espera a mañana. Nosotros tampoco.</h1>
+      <p class="lead">Fontanería de urgencia en Sabadell a cualquier hora del día o de la noche. Descolgamos el teléfono, valoramos tu avería y salimos.</p>
+      <div class="actions">
+        <a class="btn-call" href="tel:+34936941829">
+          <span class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+          <span><span class="num">936 941 829</span><span class="cap">Llama y te decimos qué hacer mientras llegamos</span></span>
+        </a>
+        <a class="btn-wa" href="https://wa.me/34644415819" target="_blank" rel="noopener">
+          <span class="wa-ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.94 8.94 0 0 0-7.75 13.4L3 21l3.7-1.24A8.9 8.9 0 0 0 12.05 21a8.94 8.94 0 0 0 5.55-15.68zM12.05 19.3a7.3 7.3 0 0 1-3.83-1.07l-.28-.17-2.6.87.85-2.56-.18-.28a7.4 7.4 0 1 1 6.04 3.21zm4.05-5.5c-.22-.11-1.3-.64-1.5-.71s-.35-.11-.5.11-.57.71-.7.86-.26.17-.48.06a6.06 6.06 0 0 1-1.78-1.1 6.7 6.7 0 0 1-1.23-1.53c-.13-.22 0-.34.1-.45s.22-.26.33-.39a1.5 1.5 0 0 0 .22-.37.4.4 0 0 0 0-.39c-.06-.11-.5-1.2-.68-1.64s-.36-.37-.5-.38h-.43a.82.82 0 0 0-.6.28 2.5 2.5 0 0 0-.78 1.86 4.36 4.36 0 0 0 .91 2.3 9.9 9.9 0 0 0 3.8 3.36c.53.23.94.36 1.26.46a3 3 0 0 0 1.4.09 2.3 2.3 0 0 0 1.5-1.06 1.9 1.9 0 0 0 .13-1.06c-.06-.1-.2-.16-.42-.27z"/></svg></span>
+          Mándanos una foto por WhatsApp
+        </a>
       </div>
     </div>
 
-    <!-- SIGNATURE ELEMENT: transparent quote receipt -->
-    <div class="receipt">
-      <div class="receipt-stamp">Sin sorpresas</div>
-      <div class="receipt-top">
-        <span class="label">Ejemplo de presupuesto</span>
-        <span class="id mono">Nº FS-0842</span>
-      </div>
-      <div class="receipt-line">
-        <div class="r-row"><span class="k">Mano de obra</span><span class="v">45,00 €</span></div>
-        <div class="r-row"><span class="k">Materiales (grifo + juntas)</span><span class="v">28,00 €</span></div>
-        <div class="r-row included"><span class="k">Desplazamiento</span><span class="v">Incluido</span></div>
-        <div class="r-row"><span class="k">IVA (21%)</span><span class="v">15,33 €</span></div>
-      </div>
-      <div class="r-total">
-        <span class="k">Total</span>
-        <span class="v">88,33 €</span>
+    <!-- SIGNATURE: 24-hour dial -->
+    <div class="dial-wrap">
+      <div>
+        <div class="dial">
+          <svg viewBox="0 0 360 360" role="img" aria-label="Reloj de 24 horas con todas las horas cubiertas">
+            <defs>
+              <linearGradient id="waterGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#43C7E0"/>
+                <stop offset="55%" stop-color="#6FE0D8"/>
+                <stop offset="100%" stop-color="#1E9DB8"/>
+              </linearGradient>
+            </defs>
+            <circle class="track" cx="180" cy="180" r="164"/>
+            <circle class="arc" cx="180" cy="180" r="164" transform="rotate(-90 180 180)"/>
+            <!-- ticks -->
+            <g>
+              <line class="tick major" x1="180" y1="8" x2="180" y2="26"/>
+              <line class="tick" x1="223" y1="13.6" x2="218.4" y2="31"/>
+              <line class="tick" x1="266" y1="31" x2="257" y2="46.6"/>
+              <line class="tick major" x1="301.6" y1="58.4" x2="289.2" y2="70.8"/>
+              <line class="tick" x1="329" y1="94" x2="313.4" y2="103"/>
+              <line class="tick" x1="346.4" y1="137" x2="329" y2="141.6"/>
+              <line class="tick major" x1="352" y1="180" x2="334" y2="180"/>
+              <line class="tick" x1="346.4" y1="223" x2="329" y2="218.4"/>
+              <line class="tick" x1="329" y1="266" x2="313.4" y2="257"/>
+              <line class="tick major" x1="301.6" y1="301.6" x2="289.2" y2="289.2"/>
+              <line class="tick" x1="266" y1="329" x2="257" y2="313.4"/>
+              <line class="tick" x1="223" y1="346.4" x2="218.4" y2="329"/>
+              <line class="tick major" x1="180" y1="352" x2="180" y2="334"/>
+              <line class="tick" x1="137" y1="346.4" x2="141.6" y2="329"/>
+              <line class="tick" x1="94" y1="329" x2="103" y2="313.4"/>
+              <line class="tick major" x1="58.4" y1="301.6" x2="70.8" y2="289.2"/>
+              <line class="tick" x1="31" y1="266" x2="46.6" y2="257"/>
+              <line class="tick" x1="13.6" y1="223" x2="31" y2="218.4"/>
+              <line class="tick major" x1="8" y1="180" x2="26" y2="180"/>
+              <line class="tick" x1="13.6" y1="137" x2="31" y2="141.6"/>
+              <line class="tick" x1="31" y1="94" x2="46.6" y2="103"/>
+              <line class="tick major" x1="58.4" y1="58.4" x2="70.8" y2="70.8"/>
+              <line class="tick" x1="94" y1="31" x2="103" y2="46.6"/>
+              <line class="tick" x1="137" y1="13.6" x2="141.6" y2="31"/>
+            </g>
+            <text class="hr-label" x="180" y="52" text-anchor="middle">24</text>
+            <text class="hr-label" x="312" y="185" text-anchor="middle">06</text>
+            <text class="hr-label" x="180" y="320" text-anchor="middle">12</text>
+            <text class="hr-label" x="48" y="185" text-anchor="middle">18</text>
+          </svg>
+          <div class="dial-center">
+            <span class="big">24h</span>
+            <span class="small">Cada hora del día, incluida esta</span>
+          </div>
+        </div>
+        <p class="dial-note"><span class="sw"></span>Cobertura completa, festivos incluidos</p>
       </div>
     </div>
   </div>
 </header>
 
-<!-- TRUSTBAR -->
-<div class="trustbar">
+<!-- COVER STRIP -->
+<div class="cover">
   <div class="wrap">
-    <div class="stat"><b>+1.500</b><span>averías resueltas en Sabadell</span></div>
-    <div class="stat"><b>desde 45€</b><span>mano de obra</span></div>
-    <div class="stat"><b>0€</b><span>desplazamiento incluido</span></div>
-    <div class="stat"><b>100%</b><span>presupuesto por escrito</span></div>
+    <div class="item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.5c3.8 4.8 6.6 8.6 6.6 12.3a6.6 6.6 0 0 1-13.2 0C5.4 11.1 8.2 7.3 12 2.5z"/></svg>
+      <h3>Fugas e inundaciones</h3>
+      <p>Cortamos el agua, localizamos el punto y reparamos.</p>
+    </div>
+    <div class="item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 12a9 9 0 1 1 9 9"/><path d="M3 12a9 9 0 0 1 9-9"/></svg>
+      <h3>Atascos y desagües</h3>
+      <p>Baños, cocinas y bajantes de comunidad.</p>
+    </div>
+    <div class="item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12a7 7 0 1 1 14 0c0 3.5-2.6 5.2-2.6 8H7.6C7.6 17.2 5 15.5 5 12z"/></svg>
+      <h3>Calderas y agua caliente</h3>
+      <p>Sin agua caliente en pleno invierno, resuelto hoy.</p>
+    </div>
+    <div class="item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></svg>
+      <h3>Comunidades y locales</h3>
+      <p>Averías comunitarias y urgencias en negocios.</p>
+    </div>
   </div>
 </div>
 
-<!-- BENEFICIOS -->
-<section id="beneficios">
+<!-- NIGHT TIMELINE -->
+<section class="section">
   <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Por qué elegirnos</span>
-      <h2>Sabes lo que pagas antes de que lleguemos</h2>
-      <p>Nada de "según lo que encontremos". Te desglosamos cada partida por teléfono y confirmamos el total antes de tocar nada.</p>
+    <div class="section-intro">
+      <h2>Qué pasa cuando llamas a las tres de la mañana</h2>
+      <p>Una urgencia real, contada hora a hora. Así trabajamos cuando el agua ya está en el suelo del pasillo.</p>
     </div>
-    <div class="grid-3">
-      <div class="card">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 2h6l1 4H8l1-4z"/><rect x="4" y="6" width="16" height="16" rx="2"/></svg></div>
-        <h3>Desglose línea por línea</h3>
-        <p>Mano de obra, materiales e IVA separados desde el primer presupuesto, no un número redondo sin explicar.</p>
+    <div class="timeline">
+      <div class="tl-item">
+        <span class="tl-clock">03:11</span>
+        <h3>Descuelgas y descolgamos</h3>
+        <p>No hay contestador ni centralita. Habla directamente con el fontanero que va a ir a tu casa.</p>
       </div>
-      <div class="card">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c4 5 7 9 7 13a7 7 0 0 1-14 0c0-4 3-8 7-13z"/></svg></div>
-        <h3>Localización de fugas sin obra</h3>
-        <p>Detectamos fugas ocultas con equipos de detección, minimizando la obra necesaria para reparar.</p>
+      <div class="tl-item">
+        <span class="tl-clock">03:13</span>
+        <h3>Te decimos qué hacer ya</h3>
+        <p>Dónde está la llave de paso y cómo cortar el agua para que la avería no vaya a más mientras salimos.</p>
       </div>
-      <div class="card">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4.5 8-11.8V5l-8-3-8 3v5.2C4 17.5 12 22 12 22z"/></svg></div>
-        <h3>Garantía en cada reparación</h3>
-        <p>Todos los trabajos incluyen garantía por escrito en materiales y mano de obra.</p>
+      <div class="tl-item">
+        <span class="tl-clock">03:16</span>
+        <h3>Precio antes de salir</h3>
+        <p>Te damos el importe con el recargo nocturno ya incluido. Si no te encaja, no hay coste ni compromiso.</p>
+      </div>
+      <div class="tl-item final">
+        <span class="tl-clock">04:05</span>
+        <h3>Avería contenida y factura en la mano</h3>
+        <p>Reparación hecha o contenida hasta poder repararla en firme, con factura y garantía por escrito.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SERVICIOS -->
-<section id="precios">
+<!-- RATES -->
+<section class="section" style="padding-top:0;">
   <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Servicios y precio orientativo</span>
-      <h2>Lo que solemos resolver en Sabadell</h2>
+    <div class="section-intro">
+      <h2>Tarifas de urgencia, dichas de frente</h2>
+      <p>El trabajo nocturno cuesta más, y preferimos que lo sepas por teléfono y no al firmar la factura.</p>
     </div>
-    <div class="svc-grid">
-      <div class="svc-card">
-        <div><div class="name">Reparación de fuga</div><div class="desc">Grifos, tuberías o cisternas</div></div>
-        <div class="amt">desde 65 €</div>
+    <div class="rate-panel">
+      <div class="rate-row">
+        <div><div class="job">Fuga o rotura de tubería</div><div class="det">Localización y reparación</div></div>
+        <div class="fee">desde 75 €</div>
       </div>
-      <div class="svc-card">
-        <div><div class="name">Desatasco de tubería</div><div class="desc">Cocina, baño o bajante</div></div>
-        <div class="amt">desde 70 €</div>
+      <div class="rate-row">
+        <div><div class="job">Desatasco</div><div class="det">Baño, cocina o bajante</div></div>
+        <div class="fee">desde 80 €</div>
       </div>
-      <div class="svc-card">
-        <div><div class="name">Instalación de calentador</div><div class="desc">Sustitución o reparación</div></div>
-        <div class="amt">desde 120 €</div>
+      <div class="rate-row">
+        <div><div class="job">Caldera o termo sin agua caliente</div><div class="det">Diagnóstico y reparación</div></div>
+        <div class="fee">desde 120 €</div>
       </div>
-      <div class="svc-card">
-        <div><div class="name">Reforma de baño</div><div class="desc">Presupuesto tras visita técnica</div></div>
-        <div class="amt">consultar</div>
+      <div class="rate-row">
+        <div><div class="job">Recargo nocturno y festivos</div><div class="det">De 22 h a 8 h, domingos y festivos</div></div>
+        <div class="fee">+35 €</div>
+      </div>
+      <div class="rate-foot">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+        <span>El desplazamiento va incluido si haces la reparación con nosotros. <b>El precio que te damos por teléfono es el que pagas</b>, salvo que al abrir aparezca algo distinto a lo que nos contaste: en ese caso te lo explicamos antes de seguir.</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PROCESO -->
-<section>
+<!-- CALL BAND -->
+<section class="section" style="padding-top:0;">
   <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Cómo funciona</span>
-      <h2>De la llamada al presupuesto cerrado</h2>
-    </div>
-    <div class="steps">
-      <div class="step"><div class="num">1</div><h3>Nos llamas</h3><p>Nos cuentas qué está pasando y desde cuándo.</p></div>
-      <div class="step"><div class="num">2</div><h3>Desglose por teléfono</h3><p>Te damos mano de obra, materiales e IVA por separado.</p></div>
-      <div class="step"><div class="num">3</div><h3>Visita y confirmación</h3><p>Confirmamos el total antes de reparar nada.</p></div>
-      <div class="step"><div class="num">4</div><h3>Trabajo con garantía</h3><p>Reparación terminada, factura y garantía escrita.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- MID CTA -->
-<section>
-  <div class="wrap">
-    <div class="cta-strip">
+    <div class="band">
       <div>
-        <h3>¿Quieres saber el precio exacto?</h3>
-        <p>Cuéntanos la avería y te damos el desglose completo por teléfono, sin compromiso.</p>
+        <h2>¿Tienes agua saliendo ahora mismo?</h2>
+        <p>Llama antes de ponerte a achicar. Te guiamos para cortar el agua mientras vamos hacia allí.</p>
       </div>
-      <div class="cta-col">
-        <a class="btn-call" href="tel:+34936942508" style="background:var(--terracotta);">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          936 942 508
+      <div class="actions">
+        <a class="btn-call" href="tel:+34936941829">
+          <span class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+          <span><span class="num">936 941 829</span><span class="cap">Atendemos a cualquier hora</span></span>
         </a>
-        <a class="btn-whatsapp" href="https://wa.me/34644415819" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.94 8.94 0 0 0-7.75 13.4L3 21l3.7-1.24A8.9 8.9 0 0 0 12.05 21a8.94 8.94 0 0 0 5.55-15.68zM12.05 19.3a7.3 7.3 0 0 1-3.83-1.07l-.28-.17-2.6.87.85-2.56-.18-.28a7.4 7.4 0 1 1 6.04 3.21zm4.05-5.5c-.22-.11-1.3-.64-1.5-.71s-.35-.11-.5.11-.57.71-.7.86-.26.17-.48.06a6.06 6.06 0 0 1-1.78-1.1 6.7 6.7 0 0 1-1.23-1.53c-.13-.22 0-.34.1-.45s.22-.26.33-.39a1.5 1.5 0 0 0 .22-.37.4.4 0 0 0 0-.39c-.06-.11-.5-1.2-.68-1.64s-.36-.37-.5-.38h-.43a.82.82 0 0 0-.6.28 2.5 2.5 0 0 0-.78 1.86 4.36 4.36 0 0 0 .91 2.3 9.9 9.9 0 0 0 3.8 3.36c.53.23.94.36 1.26.46a3 3 0 0 0 1.4.09 2.3 2.3 0 0 0 1.5-1.06 1.9 1.9 0 0 0 .13-1.06c-.06-.1-.2-.16-.42-.27z"/></svg>
+        <a class="btn-wa" href="https://wa.me/34644415819" target="_blank" rel="noopener">
+          <span class="wa-ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.94 8.94 0 0 0-7.75 13.4L3 21l3.7-1.24A8.9 8.9 0 0 0 12.05 21a8.94 8.94 0 0 0 5.55-15.68zM12.05 19.3a7.3 7.3 0 0 1-3.83-1.07l-.28-.17-2.6.87.85-2.56-.18-.28a7.4 7.4 0 1 1 6.04 3.21zm4.05-5.5c-.22-.11-1.3-.64-1.5-.71s-.35-.11-.5.11-.57.71-.7.86-.26.17-.48.06a6.06 6.06 0 0 1-1.78-1.1 6.7 6.7 0 0 1-1.23-1.53c-.13-.22 0-.34.1-.45s.22-.26.33-.39a1.5 1.5 0 0 0 .22-.37.4.4 0 0 0 0-.39c-.06-.11-.5-1.2-.68-1.64s-.36-.37-.5-.38h-.43a.82.82 0 0 0-.6.28 2.5 2.5 0 0 0-.78 1.86 4.36 4.36 0 0 0 .91 2.3 9.9 9.9 0 0 0 3.8 3.36c.53.23.94.36 1.26.46a3 3 0 0 0 1.4.09 2.3 2.3 0 0 0 1.5-1.06 1.9 1.9 0 0 0 .13-1.06c-.06-.1-.2-.16-.42-.27z"/></svg></span>
           Escríbenos por WhatsApp
         </a>
       </div>
@@ -397,50 +455,57 @@
   </div>
 </section>
 
-<!-- ZONAS -->
-<section id="zonas">
+<!-- ZONES -->
+<section class="section" style="padding-top:0;">
   <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Zona de servicio</span>
-      <h2>Sabadell y alrededores</h2>
+    <div class="section-intro">
+      <h2>Dónde llegamos de madrugada</h2>
+      <p>Cubrimos Sabadell entero y los municipios de alrededor, también fuera de horario.</p>
     </div>
-    <div class="zones">
-      <span class="zone-chip">Sabadell centro</span>
-      <span class="zone-chip">Ca n'Oriac</span>
-      <span class="zone-chip">Gràcia</span>
-      <span class="zone-chip">Can Puiggener</span>
-      <span class="zone-chip">Terrassa</span>
-      <span class="zone-chip">Cerdanyola del Vallès</span>
-      <span class="zone-chip">Sant Quirze del Vallès</span>
+    <div class="zone-list">
+      <span class="zone">Sabadell centre</span>
+      <span class="zone">Ca n'Oriac</span>
+      <span class="zone">Gràcia</span>
+      <span class="zone">La Creu Alta</span>
+      <span class="zone">Can Puiggener</span>
+      <span class="zone">Torre-romeu</span>
+      <span class="zone">Sant Quirze del Vallès</span>
+      <span class="zone">Barberà del Vallès</span>
+      <span class="zone">Castellar del Vallès</span>
     </div>
   </div>
 </section>
 
 <!-- FAQ -->
-<section id="faq">
+<section class="section" style="padding-top:0;">
   <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Dudas frecuentes</span>
-      <h2>Antes de llamar</h2>
+    <div class="section-intro">
+      <h2>Lo que suelen preguntarnos de noche</h2>
     </div>
-    <div>
-      <details class="faq-item" open>
-        <summary>¿El presupuesto detalla materiales y mano de obra por separado?</summary>
-        <p>Sí, siempre. Te damos el desglose completo por teléfono antes de venir, para que sepas exactamente qué estás pagando.</p>
-      </details>
-      <details class="faq-item">
-        <summary>¿Cobráis por venir a hacer el diagnóstico?</summary>
-        <p>El desplazamiento está incluido en el presupuesto si finalmente realizas la reparación con nosotros.</p>
-      </details>
-      <details class="faq-item">
-        <summary>¿El precio puede subir una vez empezado el trabajo?</summary>
-        <p>No, si el diagnóstico inicial es correcto. Si aparece algo distinto a lo previsto, te lo explicamos y confirmamos el nuevo desglose antes de continuar.</p>
-      </details>
-      <details class="faq-item">
-        <summary>¿Qué garantía tienen las reparaciones?</summary>
-        <p>Todas las reparaciones incluyen garantía por escrito en materiales y mano de obra, con el periodo indicado en cada presupuesto.</p>
-      </details>
-    </div>
+    <details class="qa" open>
+      <summary>¿De verdad contesta alguien a las cuatro de la mañana?
+        <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg></span>
+      </summary>
+      <p>Sí. Hay un fontanero de guardia todas las noches del año. No hay contestador: hablas con la persona que va a ir a tu casa.</p>
+    </details>
+    <details class="qa">
+      <summary>¿Cuánto sube el precio por ser de madrugada?
+        <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg></span>
+      </summary>
+      <p>El recargo nocturno es de 35 € sobre la tarifa normal, entre las 22 h y las 8 h, domingos y festivos. Te lo decimos por teléfono antes de salir, nunca al final.</p>
+    </details>
+    <details class="qa">
+      <summary>¿Qué hago mientras esperamos que lleguéis?
+        <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg></span>
+      </summary>
+      <p>Lo primero es cortar la llave de paso general. Si no sabes dónde está, te lo explicamos por teléfono mientras vamos de camino.</p>
+    </details>
+    <details class="qa">
+      <summary>¿Podéis reparar del todo o solo contener la avería?
+        <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg></span>
+      </summary>
+      <p>La mayoría de urgencias se resuelven en la misma visita. Si hace falta material especial o picar obra, dejamos la avería contenida esa noche y cerramos la reparación al día siguiente.</p>
+    </details>
   </div>
 </section>
 
@@ -448,27 +513,29 @@
 <footer>
   <div class="wrap">
     <div class="col">
-      <div class="brand">Fontanero <span>Sabadell</span></div>
-      <p>Fontanería experta en Sabadell y el Vallès Occidental.</p>
+      <div class="wordmark">
+        <svg class="drop" viewBox="0 0 24 24" fill="none" stroke="#43C7E0" stroke-width="2.2"><path d="M12 2.5c3.8 4.8 6.6 8.6 6.6 12.3a6.6 6.6 0 0 1-13.2 0C5.4 11.1 8.2 7.3 12 2.5z"/></svg>
+        Fontanero Sabadell 24 h
+      </div>
+      <p>Urgencias de fontanería en Sabadell y el Vallès Occidental,<br>los 365 días del año.</p>
     </div>
     <div class="col">
-      <p class="title">Contacto</p>
-      <p><a href="tel:+34936942508">📞 936 942 508</a></p>
-      <p><a href="https://wa.me/34644415819" target="_blank" rel="noopener">💬 WhatsApp: 644 415 819</a></p>
-      <p>Sabadell y el Vallès Occidental</p>
-      <p>Lunes a sábado, 8h–20h</p>
+      <h4>Llámanos</h4>
+      <p><a href="tel:+34936941829">936 941 829</a></p>
+      <p><a href="https://wa.me/34644415819" target="_blank" rel="noopener">WhatsApp 644 415 819</a></p>
+      <p>Abierto ahora, y a las tres de la mañana</p>
     </div>
   </div>
-  <div class="bottom">© 2026 Fontanero Sabadell Expertos. Todos los derechos reservados.</div>
+  <div class="wrap"><div class="fine">© 2026 Fontanero Sabadell 24 h. Todos los derechos reservados.</div></div>
 </footer>
 
-<!-- STICKY MOBILE CALL + WHATSAPP BAR -->
-<div class="sticky-bar">
-  <a class="call-part" href="tel:+34936942508">
+<!-- STICKY -->
+<div class="sticky">
+  <a class="s-call" href="tel:+34936941829">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-    Llamar
+    Llamar ahora
   </a>
-  <a class="wa-part" href="https://wa.me/34644415819" target="_blank" rel="noopener">
+  <a class="s-wa" href="https://wa.me/34644415819" target="_blank" rel="noopener">
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.94 8.94 0 0 0-7.75 13.4L3 21l3.7-1.24A8.9 8.9 0 0 0 12.05 21a8.94 8.94 0 0 0 5.55-15.68zM12.05 19.3a7.3 7.3 0 0 1-3.83-1.07l-.28-.17-2.6.87.85-2.56-.18-.28a7.4 7.4 0 1 1 6.04 3.21zm4.05-5.5c-.22-.11-1.3-.64-1.5-.71s-.35-.11-.5.11-.57.71-.7.86-.26.17-.48.06a6.06 6.06 0 0 1-1.78-1.1 6.7 6.7 0 0 1-1.23-1.53c-.13-.22 0-.34.1-.45s.22-.26.33-.39a1.5 1.5 0 0 0 .22-.37.4.4 0 0 0 0-.39c-.06-.11-.5-1.2-.68-1.64s-.36-.37-.5-.38h-.43a.82.82 0 0 0-.6.28 2.5 2.5 0 0 0-.78 1.86 4.36 4.36 0 0 0 .91 2.3 9.9 9.9 0 0 0 3.8 3.36c.53.23.94.36 1.26.46a3 3 0 0 0 1.4.09 2.3 2.3 0 0 0 1.5-1.06 1.9 1.9 0 0 0 .13-1.06c-.06-.1-.2-.16-.42-.27z"/></svg>
     WhatsApp
   </a>
